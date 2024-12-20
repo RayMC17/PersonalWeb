@@ -101,3 +101,81 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* Responsive Design: Media Queries */
+
+/* Tablet Screens (768px and below) */
+@media (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar {
+        width: 100%;
+        height: auto; /* Adjust height */
+        padding: 10px 0;
+    }
+
+    ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center;
+        gap: 10px; /* Add spacing between items */
+    }
+
+    ul li {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px;
+    }
+
+    .logo {
+        font-size: 28px; /* Adjust logo size */
+        text-align: center; /* Center-align logo */
+    }
+
+    /* Content adjustments */
+    h1 {
+        font-size: 36px; /* Smaller heading size */
+        margin-top: 120px; /* Adjust margin */
+    }
+
+    p1 {
+        font-size: 18px; /* Adjust font size */
+        padding: 0 10px; /* Add padding to the sides */
+    }
+}
+
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column; /* Stack the entire navbar */
+        align-items: center;
+    }
+
+    ul {
+        gap: 5px; /* Reduce spacing between items */
+    }
+
+    ul li {
+        margin-top: 8px;
+    }
+
+    .logo {
+        font-size: 22px; /* Smaller logo size */
+    }
+
+    /* Content adjustments */
+    h1 {
+        font-size: 28px; /* Even smaller heading size */
+        margin-top: 100px; /* Adjust margin for smaller screens */
+    }
+
+    p1 {
+        font-size: 16px; /* Smaller paragraph font size */
+        line-height: 1.4; /* Adjust line height */
+        padding: 0 5px; /* Add padding to prevent content touching edges */
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 12px; /* Smaller footer text */
+        padding: 10px; /* Reduce padding */
+    }
+}

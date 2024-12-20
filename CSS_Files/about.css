@@ -119,3 +119,95 @@ footer {
     line-height: 1.8; 
     margin: 10px 0;
 }
+
+
+/* Responsive Design: Media Queries */
+
+/* Tablet Screens (768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        padding: 10px;
+        height: auto; /* Adjust height */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .menu ul li {
+        margin-left: 0; /* Remove left margin */
+        margin-top: 10px; /* Add space between items */
+    }
+
+    .logo {
+        font-size: 28px; /* Adjust logo size */
+        text-align: center; /* Center the logo */
+    }
+
+    .about-container {
+        padding: 30px; /* Adjust padding for smaller screens */
+        max-width: 90%; /* Reduce container width */
+    }
+
+    .about-container img {
+        width: 120px; /* Adjust image size */
+        height: 120px;
+    }
+
+    .about-container h1 {
+        font-size: 24px; /* Reduce heading size */
+    }
+
+    .about-container p {
+        font-size: 16px; /* Adjust paragraph size */
+        line-height: 1.6; /* Adjust line height */
+    }
+}
+
+/* Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column; /* Stack navigation bar items */
+        align-items: center;
+        padding: 10px 5px;
+    }
+
+    .menu ul {
+        gap: 5px; /* Reduce space between menu items */
+    }
+
+    .menu ul li {
+        margin-top: 8px; /* Smaller spacing between items */
+    }
+
+    .logo {
+        font-size: 22px; /* Further adjust logo size */
+    }
+
+    .about-container {
+        padding: 20px; /* Smaller padding */
+        max-width: 95%; /* Narrower width */
+    }
+
+    .about-container img {
+        width: 100px; /* Adjust image size for small screens */
+        height: 100px;
+    }
+
+    .about-container h1 {
+        font-size: 20px; /* Smaller heading size */
+    }
+
+    .about-container p {
+        font-size: 14px; /* Smaller paragraph size */
+        line-height: 1.5; /* Adjust line height */
+    }
+
+    footer {
+        font-size: 12px; /* Smaller font size for footer */
+        padding: 10px; /* Reduce padding */
+    }
+}

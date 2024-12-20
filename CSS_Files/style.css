@@ -27,11 +27,7 @@ body {
     
 }
 
-/* .icon{
-    width: 200px;
-    float: left;
-    height: 70px;
-} */
+
 
 .logo{
     color:#ff7200; 
@@ -240,234 +236,64 @@ ul li a:hover{
     text-align: center;
 } */
 
+/* Responsive Design: Media Queries */
 
-@media screen and(max-width:1200px) {
-    /* Normal Screen */
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
 
-    .navbar{
-        width: 100%;
-        height: 100px;
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
     }
-    ul{
-        margin-left: 30px;
+
+    .content h1 {
+        font-size: 2.5rem;
     }
-    ul li{
-        margin-left: 60px;
+
+    .content .par {
+        font-size: 1rem;
     }
-    ul li a{
-        font-size: 1.6vw;
-    }
-    .search{
-        margin-top: 3px;
-        margin-left: 290px;
-        font-size: 14px;
-    }
-    .btn{
-        height: 40px;
-        width: 80px;
-    }
-    .content{
-        width: 100%;
-    }
-    .content h1, .content span{
-        font-size: 4.5vw;
-    }
-    .content .par{
-        width: 90%;
-        font-size: 1.5vw;
-    }
-    .content .cn{
-        width: 13%;
-        height: 5.5vw;
-        font-size: 1.8vw;
-    }
-    .content a{
-        font-size: 1.6vw;
+
+    .cn {
+        font-size: 1rem;
+        padding: 8px 20px;
     }
 }
 
-@media screen and(max-width:1170px){
-    /* login-box */
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
 
-    .main{
-        padding-left: 20px;
-        height: 180vh;
+    .menu ul {
+        gap: 10px;
     }
-    .form{
-        margin-left: -30px;
-        width: 250px;
-        height: 370px;
-        background: linear-gradient(to top, rgba(0,0,0,0.8)50%, rgba(0,0,0,0.8)50%);
-        position: absolute;
-        top: 420px;
-        left: 50px;
-        transform: translate(0%, -5%);
-        border-radius: 10px;
-        padding: 25px;
-    }
-    .form input{
-        width: 240px; 
-        height: 35px;
-        background: transparent;
-        border-bottom: 1px solid #ff7200;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        color: #fff;
-        font-size: 15px;
-        letter-spacing: 1px; 
-        margin-top: 30px;
-        font-family: sans-serif;
-        
-     }
-     .btnn a{
-        font-size: 16px;
-    }
-    .form .link a{
-        font-size: 16px;
-    }
-}
 
-@media screen and (max-width: 830px){
-    /*For tablet*/
-   
-    .content{
-        margin-top: 120px;
-        width: 80%;   
-        margin-left: 40px;  
+    .logo {
+        font-size: 1.5rem;
     }
-    .content h1, .content span{
-        font-size: 6vw; 
-    }
-    .content .par{
-        width: 90%;
-        font-size: 1.8vw;
-    }
-    .content .cn{
-        width: 15%;
-        height: 4.5vw;
-        font-size: 2vw;
-    }
-    .content a{
-        font-size: 2vw
-    }
-    .logo{
-        margin-left: 240px;
-        width: 100%;
-        margin-top: 15px;
-        font-size: 5vw;
-    }
-    .menu{
-        width: 100%;
-    }
-    ul{
-        margin-top: -5px;
-        margin-left: 5px;
-    }
-    ul li{
-        margin-left: 60px;
-    }
-    ul li a{
-       font-size: 2vw; 
-    }
-    .search{
-        margin-top: -20px;
-        margin-left: 60px;   
-    }   
-    .srch{
-        height: 30px;
-        width: 160px;
-        font-size: 12px;
-    }
-    .btn{
-        height:30px;
-        width: 70px;
-    }
-    .main{
-        padding-left: 20px;
-        height: 180vh;
-    }
-    .form{
-        margin-left: -30px;
-        width: 250px;
-        height: 370px;
-        background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
-        position: absolute;
-        top: 430px;
-        left: 50px;
-        transform: translate(0%,-5%);
-        border-radius: 10px;
-        padding: 25px;
-    }
-    .form input{
-        width: 240px;
-        height: 35px;
-        background: transparent;
-        border-bottom: 1px solid #ff7200;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        color: #fff;
-        font-size: 15px;
-        letter-spacing: 1px;
-        margin-top: 30px;
-        font-family: sans-serif;
-    }
-    .btnn a{
-        font-size: 16px;
-    }
-    .form .link a{
-        font-size: 16px;
-    }
-}
 
-@media screen and (max-width: 600px){
-    /*IPAD*/
-    
-    .content{
-        margin-top: 80px;
-        margin-left: 20px;
+    .content h1 {
+        font-size: 2rem;
     }
-    .search{
-        margin-top: -40px;
-        margin-left: 42px;
-    }
-    .logo{
-        margin-left: 180px;
-        font-size: 4vw;
-    }
-    ul{
-        margin-top: -25px;
-        margin-left: -5px;
-    }
-    ul li {
-        margin-left: 50px;
-    }
-    ul li a{
-        font-size: 2vw;
-    }   
-}
 
-@media screen and (max-width: 450px){
-    /*mobile*/
-    .logo{
-        margin-left: 140px;
-        font-size: 4vw;
+    .content span {
+        font-size: 2.5rem;
     }
-    ul{
-        margin-top: -25px;
-    }
-    ul li {
-        margin-left: 42px;
-    }
-    ul li a{
-        font-size: 2vw;
-    }  
-    .search{
-        margin-top: -40px;
-        margin-left: 38px;
-    } 
 
+    .content .par {
+        font-size: 0.9rem;
+    }
+
+    .cn {
+        font-size: 0.9rem;
+        padding: 7px 15px;
+    }
 }
 
 /* .heading_container {
@@ -634,42 +460,6 @@ ul li a:hover{
     background: linear-gradient(to right, rgba(24, 77, 71, 0.4), rgba(24, 77, 71, 0.85));
   }
   
-  /* end contact section */
-
-  /*hairstyles sections starts*/
-
-  /* .haircut-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; 
-    
-}
-
-.haircut-box {
-    width: calc(20% - 20px); 
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.haircut-box img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.haircut-box h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.haircut-box p {
-    font-size: 14px;
-    color: #666;
-} */
 
 footer {
     font-family: Arial, Helvetica, sans-serif;
