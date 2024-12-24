@@ -1,91 +1,87 @@
 <!-- Raynisha Cornelio -->
 
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
-        <title>Appointment</title>
-        <link rel="stylesheet" href="./CSS_Files/style.css"/>
+    <title>Appointment</title>
+    <link rel="stylesheet" href="./CSS_Files/style.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        emailjs.init("RtmtvdH7oaH_IGYsf");
+    </script>
 </head>
 <body>
-
     <div class="main">
-        <div class ="navbar">
-            <div class ="icon">
-                <h2 class = "logo">AARRT</h2>
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">AARRT</h2>
             </div>
-           
-           
             <div class="menu">
                 <ul>
-                  <li><a href= "index.html"> Home</a></li>
-                  <li><a href= "hairstyles.html"> Hair Cut Designs</a></li>
-                  <li><a href= "appointment.html">Appointment</a></li>
-                  <li><a href= "contact.html"> Contact</a></li>
-                  <li><a href= "about.html"> About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hairstyles.html">Hair Cut Designs</a></li>
+                    <li><a href="appointment.html">Appointment</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
                 </ul>
             </div>
-
-      </div>
-    <!-- contact section -->
-<section class="contact_section layout_padding">
-    <div class="contact_bg_box">
-      <img src="images/contact-bg.jpg" alt="">
-    </div>
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>Set up Appointment</h2>
-      </div> 
-      <div class="">
-        <div class="row">
-          <div class="col-md-7 mx-auto">
-            <form action="">
-              <div class="contact_form-container">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <input type="text" placeholder="Full Name">
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="text" placeholder="Email">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <input type="number" placeholder="Phone Number" />
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="number" placeholder="Number of People" />
-                  </div> 
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <input type="date" placeholder="Select date" />
-                  </div>
-                  <div class="col-sm-6">
-                    <input type="time" placeholder="Select Time" />
-                  </div>
+        </div>
+        <!-- contact section -->
+        <section class="contact_section layout_padding">
+            <!-- <div class="contact_bg_box">
+                <img src="images/contact-bg.jpg" alt="">
+            </div> -->
+            <div class="container">
+                <div class="heading_container heading_center">
+                    <h2>Set up Appointment</h2>
                 </div>
                 <div class="">
-                  <input type="text" placeholder="Additional Note" class="message_input" />
+                    <div class="row">
+                        <div class="col-md-7 mx-auto">
+                            <form id="appointmentForm">
+                                <div class="contact_form-container">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                          <input type="text" name="name" placeholder="Full Name" required autocomplete="name" />
+                                        </div>
+                                        <div class="col-sm-6">
+                                          <input type="email" name="email" placeholder="Email Address" required autocomplete="email" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                          <input type="text" name="phone" placeholder="Phone Number" autocomplete="tel" />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="number" name="number_of_people" placeholder="Number of People" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="date" name="appointment_date" />
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="time" name="appointment_time" />
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="notes" placeholder="Additional Note" class="message_input" />
+                                    </div>
+                                    <div class="btn_box">
+                                        <button type="submit">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="btn_box">
-                  <a href="Thankyou.html">
-                    <button type="button">Send</button>
-                </a>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+            </div>
+        </section>
+        <!-- End of contact section -->
     </div>
-  </section>
-  <!-- End of contact section -->
-
-</div>
-
-<!-- <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> -->
-<footer>
-  <p>&copy; 2024 AARRT Barbershop - All rights reserved.</p>
-</footer>
+    <footer>
+        <p>&copy; 2024 AARRT Barbershop - All rights reserved.</p>
+    </footer>
+    <script src="./Js/email.js"></script>
 </body>
 </html>

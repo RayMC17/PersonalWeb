@@ -138,11 +138,21 @@ footer {
     p{
         color: #fff;  
     }
+    p2{
+        padding: 5px 5px;
+        background: #ff7200;
+        border: none;
+        color: white;
+        font-size: 20px;
+        border-radius: 5px 5px 5px 5px; 
+       
+
+    }
    
    .des{
-     padding: 3px;
+     padding: 23px;
      text-align: center;
-     padding-top: 10px;
+     padding-top: 20px;
      border-bottom-right-radius: 5px;
      border-bottom-left-radius: 5px;
    }
@@ -154,7 +164,7 @@ footer {
     border: none;
     color: white;
     font-size: 15px;
-    border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+    border-radius: 0 5px 5px 0; 
     cursor: pointer;
    }
    
