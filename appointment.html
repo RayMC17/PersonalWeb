@@ -1,14 +1,10 @@
-<!-- Raynisha Cornelio -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Appointment</title>
     <link rel="stylesheet" href="./CSS_Files/style.css" />
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        emailjs.init("RtmtvdH7oaH_IGYsf");
-    </script>
+    <!-- Include EmailJS SDK once -->
+    <script src="https://cdn.emailjs.com/sdk/3.11.0/email.min.js"></script>
 </head>
 <body>
     <div class="main">
@@ -26,62 +22,63 @@
                 </ul>
             </div>
         </div>
-        <!-- contact section -->
+        <!-- Contact Section -->
         <section class="contact_section layout_padding">
-            <!-- <div class="contact_bg_box">
-                <img src="images/contact-bg.jpg" alt="">
-            </div> -->
             <div class="container">
                 <div class="heading_container heading_center">
                     <h2>Set up Appointment</h2>
                 </div>
-                <div class="">
-                    <div class="row">
-                        <div class="col-md-7 mx-auto">
-                            <form id="appointmentForm">
-                                <div class="contact_form-container">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                          <input type="text" name="name" placeholder="Full Name" required autocomplete="name" />
-                                        </div>
-                                        <div class="col-sm-6">
-                                          <input type="email" name="email" placeholder="Email Address" required autocomplete="email" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                          <input type="text" name="phone" placeholder="Phone Number" autocomplete="tel" />
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <input type="number" name="number_of_people" placeholder="Number of People" />
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input type="date" name="appointment_date" />
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <input type="time" name="appointment_time" />
-                                        </div>
+                <div class="row">
+                    <div class="col-md-7 mx-auto">
+                        <form id="appointmentForm">
+                            <div class="contact_form-container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" name="name" placeholder="Full Name" required autocomplete="name" />
                                     </div>
                                     <div class="col-sm-6">
-                                        <input type="text" name="notes" placeholder="Additional Note" class="message_input" />
-                                    </div>
-                                    <div class="btn_box">
-                                        <button type="submit">Send</button>
+                                        <input type="email" name="email" placeholder="Email Address" required autocomplete="email" />
                                     </div>
                                 </div>
-                            </form>
-                        </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" name="phone" placeholder="Phone Number" autocomplete="tel" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="number" name="number_of_people" placeholder="Number of People" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="date" name="appointment_date" />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="time" name="appointment_time" />
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" name="notes" placeholder="Additional Note" class="message_input" />
+                                </div>
+                                <div class="btn_box">
+                                    <button type="submit">Send</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- End of contact section -->
+        <!-- End of Contact Section -->
     </div>
     <footer>
         <p>&copy; 2024 AARRT Barbershop - All rights reserved.</p>
     </footer>
     <script src="./Js/email.js"></script>
+    <script>
+        // Initialize EmailJS after the SDK is loaded
+        window.onload = function () {
+            emailjs.init("PAfG1JQb3e3RwMDC");
+        };
+    </script>
 </body>
 </html>
