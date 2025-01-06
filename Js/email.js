@@ -8,14 +8,13 @@ document.getElementById("appointmentForm").addEventListener("submit", function (
     const formObject = Object.fromEntries(formData.entries());
 
     // Send the email using EmailJS
-    emailjs
-        .send("service_mnep7kj", "template_w1d0vua", formObject)
+    emailjs.send("service_jo9wxal", "template_w1d0vua", formObject)
         .then(function (response) {
             console.log("SUCCESS!", response.status, response.text);
             alert("Your appointment has been successfully submitted!");
             window.location.href = "Thankyou.html"; // Redirect to Thank You page
         })
-        .catch(function (error) {
+        .catch(function (error) {//handles the error if the submission fails
             console.error("FAILED...", error);
             alert("There was an error submitting your appointment. Please try again.");
         });
